@@ -1,9 +1,10 @@
 ## Files
 
-* `.gitignore`: ignores the downloaded data and standard R files.
+* `figure`: Contains original figures to be reproduced.
+* `.gitignore`: Ignores the downloaded data and standard R files.
 * `README.md`: This file.
 * `get_data.sh`: Shell script that downloads and unzips data to `data/household_power_consumption.txt`.
-* `data/household_power_consumption.txt` (is created by running the script `get_data.sh`:
+* `data/household_power_consumption.txt` (is created by running the script `get_data.sh`):
 Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years. 
 Different electrical quantities and some sub-metering values are available:
     	<ol>
