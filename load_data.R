@@ -2,7 +2,11 @@
 library(dplyr)
 
 ## read in the data
-household_power_consumption <- read.table("./data/household_power_consumption.txt", header = TRUE, sep = ";")
+household_power_consumption <- read.table("./data/household_power_consumption.txt", 
+                                          header = TRUE,
+                                          colClasses = c(rep("factor", 2), rep("numeric", 7)),
+                                          sep = ";",
+                                          na.strings = "?")
 
 ## transform dates and times into appropriate format
 household_power_consumption <- mutate(household_power_consumption, 
@@ -12,4 +16,3 @@ household_power_consumption <- mutate(household_power_consumption,
 
 ## get the relevant days
 household_power_consumption <- filter(household_power_consumption, as.Date(datetime) >= as.Date("2007-02-01"), as.Date(datetime) <= as.Date("2007-02-02"))
-
