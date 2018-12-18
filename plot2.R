@@ -16,3 +16,5 @@ with(household_power_consumption,
              ylab = 'Global Active Power (kilowatts)'))
 
 dev.off()
+
+remove(household_power_consumption)

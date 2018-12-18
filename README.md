@@ -1,8 +1,9 @@
 ## Files
 
 * `.gitignore`: ignores the downloaded data and standard R files.
+* `README.md`: This file.
 * `get_data.sh`: Shell script that downloads and unzips data to `data/household_power_consumption.txt`.
-* `data/household_power_consumption.txt` (exists only after running the get_data.sh script:
+* `data/household_power_consumption.txt` (is created by running the script `get_data.sh`:
 Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years. 
 Different electrical quantities and some sub-metering values are available:
     	<ol>
@@ -17,8 +18,8 @@ Different electrical quantities and some sub-metering values are available:
 		<li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 	</ol>
 * `load_data.R`: R-script that loads into R the data of the dates 2007-02-01 and 2007-02-02 from `data/household_power_consumption.txt` in an appropriate format.
-* `plotX.R` for X = 1, 2, 3, 4: R-scripts that create the figures `plotX.png`.
-* `plotX.png` for X = 1, 2, 3, 4: Figures created by the R-scripts `plotX.R`.
+* `plotX.R` for `X = 1, 2, 3, 4`: R-scripts that create the figures `plotX.png`.
+* `plotX.png` for `X = 1, 2, 3, 4`: Figures created by the R-scripts `plotX.R`.
 
 ## Assigment
 

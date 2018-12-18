@@ -15,3 +15,6 @@ hist(household_power_consumption$Global_active_power,
                     xlab = 'Global Active Power (kilowatts)')
 
 dev.off()
+
+remove(household_power_consumption)
+

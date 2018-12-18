@@ -3,7 +3,7 @@ library(graphics)
 library(grDevices)
 
 ## load the data using the R script load_data.R
-#source("./load_data.R")
+source("./load_data.R")
 
 ## Create Plot 4
 png(filename = "plot4.png")
@@ -59,3 +59,5 @@ with(household_power_consumption,
           type = "l"))
 
 dev.off()
+
+remove(household_power_consumption)
