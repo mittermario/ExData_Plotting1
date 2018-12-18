@@ -1,5 +1,6 @@
 ## Files
 
+* `.gitignore`: ignores the downloaded data and standard R files
 * `get_data.sh`:
 shell script that downloads and unzips data to `data/household_power_consumption.txt`
 * `data/household_power_consumption.txt` (exists only after running the get_data.sh script:
@@ -16,7 +17,7 @@ Different electrical quantities and some sub-metering values are available:
 		<li><b>Sub_metering_2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
 		<li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 	</ol>
-* `load_data.R`: R-script that loads the data of the dates 2007-02-01 and 2007-02-02 from `data/household_power_consumption.txt` in an appropriate format.
+* `load_data.R`: R-script that loads into R the data of the dates 2007-02-01 and 2007-02-02 from `data/household_power_consumption.txt` in an appropriate format.
 
 ## Assigment
 
